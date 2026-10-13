@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorveay | Geleceğin Teknolojileri</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark), var(--secondary));
+            color: white;
+            padding: 12rem 5% 8rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #3b82f6;
+        }
+
+        /* Features */
+        .features {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 5%;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Dorveay.</a>
+            <div class="nav-links">
+                <a href="#about">Hakkımızda</a>
+                <a href="#services">Çözümlerimiz</a>
+                <a href="#contact">İletişim</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Yapay Zeka ile Sınırları Zorlayın.</h1>
+        <p>Dorveay olarak, işletmenizi geleceğe taşımak için son teknoloji makine öğrenimi modelleri ve ölçeklenebilir yazılım çözümleri sunuyoruz.</p>
+        <a href="#services" class="btn">Ne Yapıyoruz?</a>
+    </section>
+
+    <section id="services" class="features">
+        <h2>Çözümlerimiz</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Gelişmiş Yapay Zeka</h3>
+                <p>Büyük dil modelleri (LLM) ve veri analiz araçlarıyla iş süreçlerinizi otomatikleştirip hızlandırıyoruz.</p>
+            </div>
+            <div class="card">
+                <h3>Bulut Altyapısı</h3>
+                <p>Güvenli, hızlı ve tamamen ölçeklenebilir bulut mimarileri tasarlayarak veri yükünüzü hafifletiyoruz.</p>
+            </div>
+            <div class="card">
+                <h3>Kurumsal Yazılım</h3>
+                <p>İhtiyaçlarınıza özel, yüksek performanslı ve kullanıcı dostu modern web/mobil uygulamalar geliştiriyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="features" style="background-color: white;">
+        <h2>Hakkımızda</h2>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555;">
+            Dorveay, teknolojinin dönüştürücü gücüne inanan bir grup tutkulu mühendis tarafından kuruldu. Amacımız, karmaşık problemleri basit ve akıllı yazılım çözümleriyle ortadan kaldırmak. Verimliliği artırırken, inovasyonu her zaman merkezimize alıyoruz.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <h2 style="margin-bottom: 1rem;">İletişimde Kalalım</h2>
+        <p style="margin-bottom: 2rem;">Yapay zeka devrimine hazır mısınız? Bize ulaşın.</p>
+        <a href="mailto:hello@dorveay.com" class="btn" style="background-color: white; color: var(--dark);">hello@dorveay.com</a>
+        <p style="margin-top: 3rem;">&copy; 2026 Dorveay Inc. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
